@@ -45,16 +45,17 @@ That’s ABI mismatch → segfaults → “Arch broke” posts.
 ## Before archinstall
 ## setting network configuration...
 1) iwctl: iNet wireless daemon control tool... It is a command line client for iwd daemon to connect to WiFi network.
-   iwctl commands:
-   iwctl
-   device list
-   station wlan0 scan
-   station wlan0 get-networks
-   station wlan0 connect "Network-Name"
-   passware:......
-   exit.
+    iwctl commands:
+    iwctl
+    device list
+    station wlan0 scan
+    station wlan0 get-networks
+    station wlan0 connect "Network-Name"
+    passware:......
+    exit.
 
 ## fix system time.
+   
    timedatectl set-ntp true
    timedatectl status
      check for: system clock synchronized: Yes
