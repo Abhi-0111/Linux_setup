@@ -53,13 +53,15 @@ That’s ABI mismatch → segfaults → “Arch broke” posts.
    station wlan0 connect "Network-Name"
    passware:......
    exit.
-2) fix system time.
-    timedatectl set-ntp true
-    timedatectl status
-      check for: system clock synchronized: Yes
-3) pacman-key --init
-4) pacman-key --populate archlinux
-5) pacman -Sy archlinux-keyring
-6) pacman -Syu
+
+## fix system time.
+   timedatectl set-ntp true
+   timedatectl status
+     check for: system clock synchronized: Yes
+## Populate keyring 
+ pacman-key --init
+ pacman-key --populate archlinux
+ pacman -Sy archlinux-keyring
+ pacman -Syu
 
 ## archinstall
