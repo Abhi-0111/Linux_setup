@@ -42,27 +42,27 @@ while your system still has old libc
 
 That’s ABI mismatch → segfaults → “Arch broke” posts.
 
-## Before archinstall
-## setting network configuration...
+# Before archinstall
+# setting network configuration...
 1) iwctl: iNet wireless daemon control tool... It is a command line client for iwd daemon to connect to WiFi network.
-    iwctl commands:
-    iwctl
-    device list
-    station wlan0 scan
-    station wlan0 get-networks
-    station wlan0 connect "Network-Name"
-    passware:......
-    exit.
+2)  iwctl commands:
+3)   iwctl
+4)  device list
+5)  station wlan0 scan
+6)  station wlan0 get-networks
+7)  station wlan0 connect "Network-Name"
+8)  passware:......
+9)  exit.
 
-## fix system time.
+# fix system time.
    
    timedatectl set-ntp true
    timedatectl status
      check for: system clock synchronized: Yes
-## Populate keyring 
- pacman-key --init
+# Populate keyring 
+   pacman-key --init
  pacman-key --populate archlinux
  pacman -Sy archlinux-keyring
  pacman -Syu
 
-## archinstall
+# archinstall
