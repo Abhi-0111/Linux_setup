@@ -1,6 +1,7 @@
 # Linux Installation
 ## WHY???
-The reason I am making this file is because I have a habit of crashing my Arch Linux Usually by simple command pacman -Syy.....
+The reason I am making this file is because I have a habit of crashing my Arch Linux Usually by simple command pacman -Syy..... it causes
+
 1) Database desync → partial upgrade hell
 
 Arch follows a strict rolling-release invariant:
